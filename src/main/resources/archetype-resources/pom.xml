@@ -18,7 +18,6 @@
         <junit-jupiter-engine.version>5.10.2</junit-jupiter-engine.version>
         <!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-launcher -->
         <junit-platform-launcher.version>1.10.2</junit-platform-launcher.version>
-        <hamcrest.version>2.2</hamcrest-all.version>
         <!-- https://mvnrepository.com/artifact/org.assertj/assertj-core -->
         <assertj-core.version>3.25.3</assertj-core.version>
     </properties>
@@ -32,7 +31,6 @@
                 <version>${maven-surefire-plugin.version}</version>
                 <configuration>
                     <includes>
-                        <include>**/*Should.java</include>
                         <include>**/*Test.java</include>
                     </includes>
                 </configuration>
@@ -95,12 +93,6 @@
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-launcher</artifactId>
             <version>${junit-platform-launcher.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.hamcrest</groupId>
-            <artifactId>hamcrest</artifactId>
-            <version>${hamcrest.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
