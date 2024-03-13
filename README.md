@@ -34,6 +34,12 @@ When the archetype has been installed locally you can create a project using the
                         -DinteractiveMode=false
 ```
 
+Create java library
+``` shell
+ mvn archetype:generate -DarchetypeGroupId=org.fve.archetypes -DarchetypeArtifactId=java21-junit5-assertj-maven-archetype -DarchetypeVersion=1.0.0-SNAPSHOT -DinteractiveMode=false -Dversion=1.0.0-SNAPSHOT \
+                        -DgroupId=org.fve.customlibs -DartifactId=custom-java-lib                       
+```
+
 ## References
 
 * [Maven](https://maven.apache.org)
