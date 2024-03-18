@@ -5,9 +5,19 @@
   <groupId>org.fve.archetypes</groupId>
   <artifactId>java21-junit5-assertj-maven-archetype</artifactId>
   <version>1.0.0-SNAPSHOT</version>
-  <name>java21-junit5-assertj-maven-archetype</name>
   <packaging>maven-archetype</packaging>
+
+  <name>java21-junit5-assertj-maven-archetype</name>
   <description>Archetype used to generate basic Java 21 and JUnit 5 application</description>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>21</java.version>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+    <maven.compiler.release>${java.version}</maven.compiler.release>
+    <archetype-packaging.version>3.2.1</archetype-packaging.version>
+  </properties>
 
   <build>
     <extensions>
@@ -19,10 +29,10 @@
     </extensions>
   </build>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>21</maven.compiler.source>
-    <maven.compiler.target>21</maven.compiler.target>
-    <archetype-packaging.version>3.2.1</archetype-packaging.version>
-  </properties>
+  <developers>
+    <developer>
+      <id>fve</id>
+      <name>Filip VE</name>
+    </developer>
+  </developers>
 </project>
